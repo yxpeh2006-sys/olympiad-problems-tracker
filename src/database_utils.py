@@ -37,7 +37,7 @@ def log_training_session(problems_list, demographic, training_type, session_date
 
 
     for problem in problems_list:
-        if problem['year'] < 1900 or problem['year'] > 2027:
+        if int(problem['year']) < 1900 or int(problem['year']) > 2100:
             print('Invalid Syntax')
             continue
         
